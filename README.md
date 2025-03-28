@@ -1,16 +1,21 @@
 # Projeto Integrador - Modelo
-*(Coloque aqui o nome do seu projeto.)*
+*(Mercadinho los Chicos.)*
 
 Um modelo para o desenvolvimento do Projeto Integrador do Curso de Técnico em Desenvolvimento de Sistemas para a Internet Integrado ao Ensino Médio do IFC - Campus Araquari.
-*(Coloque aqui uma breve descrição do seu projeto.)*
+*(Sistema de controle de vendas que permita ao caixa lançar as vendas realizadas. Como sua intenção
+é melhorar a gestão do negócio, é muito importante que ele consiga ter
+relatórios, como por exemplo, de vendas..)*
 
 **IMPORTANTE**: [**Cadastre seu projeto nesse link**](https://docs.google.com/spreadsheets/d/1KXuMJ9TK7GPyahR_BfLwfn4ec7vX7DgiHx42vFc4E7g/edit?usp=sharing).
 
 Professor: [Marco André Mendes](github.com/marcoandre)
 
 Equipe:
-- [Aluno1](github.com/aluno1)
-- [Aluno2](github.com/aluno2)
+- [Matheus Hodecker](github.com/matheushodecker)
+- [João Vitor Graciano](github.com/joaocostagraciano)
+- [Lucas Antonio Brandao](github.com/ABLukinhas)
+- [Ebraim herrera](github.com/Ebraim30)
+- [Deivid Leonardo](github.com/deivid1801)
 
 Links do projeto:
 (*Coloque aqui os links para a documentação do projeto e os repositórios e plubicação do backend e frontend.*)
