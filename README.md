@@ -23,6 +23,13 @@ Links do projeto:
 -   Backend: [Repositório](github.com/marcoandre/pi-backend) e [Publicação](https://pi-backend.herokuapp.com/)
 -   Frontend: [Repositório](github.com/marcoandre/pi-frontend) e [Publicação](https://pi-frontend.herokuapp.com/)
 
+
+
+_______________________________________________________________________________________________________________________________________________________________________________________
+
+
+
+
 **Como usar esse modelo para o Projeto Integrador**
 
 *(Essa parte pode ser apagada depois.)*
@@ -53,57 +60,62 @@ Assim, atualmente, ele consegue concentrar seus esforços para melhorar a gestã
 é melhorar a gestão do negócio, é muito importante que ele consiga ter
 relatórios, como por exemplo, de vendas.
 
-**1.1.2 Empréstimo**
-
-**Gerenciamento de uma biblioteca**
-
-Uma ONG, chamada Sala Arco Íris, ajuda crianças de baixa renda em sua educação básica. Atualmente, recebeu uma doação de mais de 1000 livros e está montando a sua biblioteca. Eles querem emprestar os livros para as crianças e os pais das crianças. Apesar de
-terem um computador e as estantes necessárias à disposição nessa nova biblioteca, não possuem verba suficiente para um leitor de impressão digital ou para produção
-de carteirinhas para todas as crianças. Para isso, eles precisam de um sistema que gerencie todo o acervo, empréstimos, livros disponíveis, etc. mas que isso ocorra de maneira simples e sem necessidade de novos gastos. Também é importante que haja relatórios, permitindo o controle dos empréstimos e dos livros disponíveis no acervo.
-
-**1.1.3 Ordem de Serviço (O.S.)**
-
-**Manutenção de computadores**
-
-Sr. Sálvio, nosso cliente, fez um curso de manutenção de celulares e smartphones e decidiu abrir um negócio no qual ele é responsável pelos consertos e sua esposa, Marília, realiza o atendimento aos clientes. Com sua visão empreendedora, ele sentiu a necessidade de um software que auxilie sua esposa nas tarefas diárias. Para isso, ele deseja um sistema que gerencie os clientes, orçamentos, serviços e retirada dos equipamentos. Sendo um negócio pequeno, é muito importante para ele conseguir ter relatórios que o ajudem na gestão da empresa, como o status dos serviços.
-
 # 2. Situação Problema
 
-*(Nessa parte a equipe deve descrever a situação problema que será resolvida pelo sistema. O texto abaixo descreve o que essa etapa deve conter e pode ser apagado depois.)*
+O mercadinho Los Chicos é um pequeno comércio de bairro que se destaca pela qualidade dos produtos oferecidos aos clientes. Fundado há alguns anos pelo Sr. Genital, o estabelecimento tem conquistado cada vez mais consumidores, o que resultou em um crescimento acelerado. Para atender à demanda crescente, o proprietário recentemente contratou novos funcionários para atuar no atendimento, no caixa e na gestão de estoque. Agora, com uma equipe ampliada, o Sr. Genital busca aprimorar a administração do mercadinho para garantir um funcionamento mais eficiente e organizado.
 
-![Ciclo da Venda](docs/ciclo_da_venda.webp "Ciclo da Venda")
+Atualmente, o processo de vendas no Los Chicos é realizado de maneira manual, o que pode gerar diversos desafios operacionais. No caixa, os atendentes registram as compras sem um sistema automatizado, o que pode levar a erros, como cobranças incorretas ou dificuldades no controle financeiro. Além disso, o tempo de atendimento pode ser maior do que o ideal, resultando em filas e insatisfação dos clientes.
 
-Descrevem o que acontece atualmente na empresa em um contexto global,
-abordando o funcionamento da empresa como um todo, não apenas os “problemas” que lá ocorrem.
+Outro problema enfrentado pelo mercadinho está no controle de estoque. Sem um sistema integrado às vendas, a reposição de produtos é feita com base em anotações manuais ou na percepção dos funcionários, o que pode levar à falta de itens populares ou ao excesso de mercadorias com baixa saída. Essa falta de precisão pode impactar diretamente a lucratividade do negócio.
 
-Sabendo disso, seu papel é **detalhar o funcionamento da empresa escolhida na
-atualidade, ou seja, antes de seu novo software**, usando como base a situação que passamos, mas aprofundando os detalhes de como as coisas acontecem.
+Além disso, a falta de relatórios detalhados dificulta a análise do desempenho do mercadinho. O Sr. Genital não consegue visualizar com clareza quais produtos são mais vendidos, quais horários possuem maior movimento e como está a evolução financeira do negócio. Essas informações são fundamentais para que ele possa tomar decisões estratégicas, como ajustar o mix de produtos, planejar promoções e otimizar a gestão financeira.
 
--   Pesquise sobre empresas do ramo escolhido
-    para entender como funcionam;
--   Aproveite seus conhecimentos previamente adquiridos na área da empresa que escolheu, se houver;
--   Simule uma situação real. Lembre-se que são propostas com empresas fictícias, sendo assim, você terá que tomar certas decisões sobre como a empresa funciona em relação às coisas que não estão definidas no documento base (por exemplo, no caso da padaria, dizemos que seu Genival contratou mais funcionários, mas saber quantos e o que fazem pode ser relevante para o software), então tente “visualizar” a empresa funcionando, como se você estivesse lá acompanhando o dia-a-dia;
+Diante dos desafios identificados, fica evidente que a ausência de um sistema de controle de vendas e gestão impacta diretamente a eficiência do mercadinho Los Chicos. Erros no registro das vendas, dificuldades no controle de estoque e a falta de informações estratégicas prejudicam o crescimento sustentável do negócio. A implementação de um software de gestão poderia solucionar esses problemas ao permitir o registro automatizado das vendas, a atualização em tempo real do estoque e a geração de relatórios detalhados. Com isso, o Sr. Genital teria mais controle sobre sua empresa e poderia tomar decisões baseadas em dados concretos, garantindo um crescimento ainda mais sólido e organizado.
 
-Seguindo essas dicas, você deve ser capaz de descrever o dia-a-dia da empresa selecionada. E para ajudar na organização do texto, indicamos uma abordagem em 3 etapas:
+# 3. Descrição da proposta(Proposta de Solução – Sistema de Ponto de Vendas (PDV) para o Mercadinho Los Chicos)
 
--   **Introdução**: comece com um parágrafo apresentando a empresa (nome, o que faz, tempo de existência, o dono, funcionários, etc);
--   **Situação-problema**: Aborde em detalhes como a empresa funciona, procurando seguir uma ordem lógica dos acontecimentos e organizando parágrafos diferentes para cada coisa diferente que for explicar (como faria em uma redação);
--   **Conclusão**: tenha um parágrafo de conclusão focando nos problemas que você notou dentro da situação problema analisada e aponte brevemente como um software poderia ajudar a resolvê-los.
 
-# 3. Descrição da proposta
+Para solucionar os desafios enfrentados pelo mercadinho Los Chicos, o sistema de Ponto de Vendas (PDV) será desenvolvido com o objetivo de automatizar e organizar o processo de vendas e gestão de estoque. O software proporcionará um registro eficiente das vendas, garantindo maior precisão nas transações e facilitando a análise do desempenho do mercadinho.
 
-Após entender o problema, proponha uma solução que será útil nos aspectos de dificuldade encontrados. Assim, aqui você deverá **explicar de maneira resumida, e preferencialmente mais textual, como o software funcionará**. Pense nesse texto como uma **introdução ao seu cliente** do que você pretende fazer por ele, para que ele confirme se realmente está dentro do desejado e permita sua continuidade.
+Foco de Ação do Software
+O sistema PDV atuará como uma ferramenta central de controle de vendas, permitindo que todas as operações realizadas no caixa sejam registradas de forma digital e segura. Com isso, será possível reduzir erros, agilizar o atendimento ao cliente e melhorar o acompanhamento das movimentações financeiras. Além disso, o sistema ajudará no controle de estoque, atualizando automaticamente a quantidade de produtos conforme as vendas forem realizadas, evitando desperdícios ou falta de mercadorias essenciais.
 
-**Alguns pontos importantes a se destacar são:**
+Níveis de Usuário e Funcionalidades
+O sistema contará com diferentes níveis de acesso, garantindo que cada usuário tenha permissões específicas, conforme sua função dentro do mercadinho:
 
--   **Qual o foco de ação do software** relacionado com os problemas levantados na análise da situação-problema. O que realmente o software vai fazer. Por exemplo, o foco de ação do Gmail é permitir o envio e recebimento de e-mails.
--   **Os níveis de usuário do sistema**. Somente o gestor tem acesso? E os funcionários? Talvez seja para ambos, ou para funcionários de cargos
-    diferentes, etc.
--   **O que poderá ser feito no software**.Apenas o principal, sem pensar em telas ou detalhes específicos, pois isso será feito em outro momento.
--   **Se houver mais de um nível de usuário**, ressaltar as diferenças entre eles na descrição da proposta.
+Operador de Caixa
 
-Tenha em mente que essa é uma etapa relativamente breve. Não é necessário um texto gigantesco, apenas dar uma noção do funcionamento do sistema. Mais adiante
-precisaremos ser bem detalhistas, todavia agora a intenção é apenas fazer algo que permita ao cliente nos dizer se estamos no caminho certo.
+Registrar vendas rapidamente através de uma interface intuitiva;
+
+Aplicar descontos ou promoções autorizadas;
+
+Emitir comprovantes de compra para os clientes.
+
+Gestor (Sr. Genital ou administradores autorizados)
+
+Acompanhar todas as vendas em tempo real;
+
+Gerar relatórios detalhados sobre faturamento, produtos mais vendidos e horários de pico;
+
+Gerenciar o estoque, visualizando quais produtos precisam ser repostos e evitando perdas;
+
+Controlar acessos e permissões de outros usuários no sistema.
+
+O que poderá ser feito no software?
+Registro digital das vendas, garantindo maior rapidez e precisão no atendimento;
+
+Atualização automática do estoque a cada venda realizada;
+
+Emissão de relatórios gerenciais para facilitar a tomada de decisões estratégicas;
+
+Organização das informações financeiras, permitindo melhor controle sobre os lucros e despesas;
+
+Possibilidade de cadastrar e gerenciar produtos, incluindo preços e quantidades disponíveis.
+
+Conclusão
+Com esse sistema, o mercadinho Los Chicos terá um controle muito mais eficiente sobre suas vendas e estoques, garantindo maior organização, redução de erros e facilidade na gestão. A proposta foca em automatizar processos essenciais, permitindo que o Sr. Genital tenha uma visão clara do desempenho do seu negócio e possa tomar decisões estratégicas com base em dados confiáveis.
+
+Caso essa solução atenda às expectativas, podemos seguir para a definição dos detalhes técnicos e funcionais do sistema.
 
 # 4. Modelagem de Dados
 
