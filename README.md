@@ -14,8 +14,7 @@ Equipe:
 - [Matheus Hodecker](github.com/matheushodecker)
 - [João Vitor Graciano](github.com/joaocostagraciano)
 - [Lucas Antonio Brandao](github.com/ABLukinhas)
-- [Ebraim herrera](github.com/Ebraim30)
-- [Deivid Leonardo](github.com/deivid1801)
+
 
 Links do projeto:
 (*Coloque aqui os links para a documentação do projeto e os repositórios e plubicação do backend e frontend.*)
@@ -126,72 +125,85 @@ Defina as entidades e relacionamentos que farão parte do sistema. Desenhe o dia
 
 
 # 4. Regras de negócio
-(*Nessa parte a equipe deve descrever as regras de negócio que serão implementadas no sistema. O texto abaixo descreve o que essa etapa deve conter e pode ser apagado depois.*)
+🧾 Regras de Negócio (RN)
+RN01 – Vendas e Descontos
+RN01.01: Descontos acima de 10% exigem aprovação de um gerente.
 
-As **Regras de negócio** são orientações e restrições que ajudam a regular as operações de uma empresa. **Regras** foram criadas para **colaborar com o funcionamento**, seja da sociedade, de uma escola, de um jogo, etc. Não seria diferente nas organizações. Vamos abordar melhor sobre esse assunto. Entender o que são as regras de negócio, sua importância, como são aplicadas e
-automatizadas na gestão por processo.
+RN01.02: Clientes inadimplentes (pagamentos pendentes há mais de 30 dias) não podem realizar novas compras.
 
-**4.1 O que são regras de negócio?**
+RN01.03: Produtos perecíveis não podem ser vendidos após a data de validade.
 
-Um negócio funciona por processos que, por sua vez, são formados por atividades relacionadas entre si.
+RN02 – Gestão de Estoque
+RN02.01: Reposição de produtos deve ocorrer quando o estoque atingir 10% da capacidade máxima.
 
-As funções das áreas de compras, estoque, logística, finanças, vendas e marketing, por exemplo, compõem um processo de fornecimento de um produto ao cliente.
+RN02.02: Produtos com baixa saída (<5 unidades/semana) devem ser sinalizados para promoção ou remoção.
 
-Dentro desses processos, existem regras que devem ser seguidas durante a execução das atividades, que ajudam a definir **COMO** as operações devem ser realizadas e gerenciadas, **POR QUEM**, **QUANDO**, **ONDE** e **POR QUÊ**.
+RN02.03: Priorizar venda de produtos próximos ao vencimento (regra FIFO).
 
-Podemos dizer que as regras de negócio são **limites impostos às operações**, de forma que elas sigam corretamente em direção às políticas e aos objetivos da instituição.
+RN03 – Relatórios e Decisões
+RN03.01: Relatórios de vendas devem ser gerados diariamente.
 
-**4.2 Regras para a criação de regras de negócio**
+RN03.02: Mix de produtos revisado mensalmente com base em vendas e lucratividade.
 
-De maneira geral, as regras de negócio devem:
-- Ser **simples**, isto é,  ter apenas uma função.
-- Ser **completas**, com início, meio e fim.
-- Ser possíveis de **mensurar** e **rastrear**.
-- Estar em consonância com a **legislação**.
-- Estar **atualizadas** e sempre **revisadas**.
-- Refletir a **política** e os **valores** da organização.
-- Ser **inteligíveis** para os colaboradores e envolvidos no processo.
+RN03.03: Promoções sazonais planejadas com base em histórico de vendas.
 
-**4.3 Por que ter regras de negócio?**
+RN04 – Acesso ao Sistema
+RN04.01: Apenas gerentes podem aprovar descontos, ajustar preços ou excluir vendas.
 
-- **Padronização de processos:** padronizam os processos e auxiliam a fluirem de forma mais eficiente e automatizada.
-- **Controle de processos:** auxiliam no controle de processos, pois falhas são identificadas e corrigidas mais rapidamente.
-- **Tomada de decisão:** auxiliam na tomada de decisão e no cumprimento de estratégias pré-estabelecidas.
+RN04.02: Funcionários do caixa só registram vendas e emitem recibos.
 
-**4.4 Exemplos de regras de negócio**
+⚙️ Requisitos Funcionais (RF)
+Módulo de Vendas
+RF01: Registrar vendas com seleção de produtos via código de barras ou busca por nome.
 
-- Em um controle de qualidade de granja, pode-se dizer que a cada 100 ovos impróprios para consumo, o lote será descartado.
-- Em um banco, clientes com faturamento mensal de mais de R$ 25 mil e CPF sem restrições, serão atendidos pelo gerente Premium pessoa física.
-- Para conclusão de licitações, devem ser feitos três orçamentos e o vencedor será sempre o de menor preço final.
-- Em um processo de seleção de RH, o candidato só pode ser aprovado se tiver mais de 5 anos de experiência na área, diploma de pós-graduação, espanhol fluente e pretensão salarial abaixo de R$ 8.000,00.
-- Em um processo de vendas, o vendedor só pode vender um produto se o cliente tiver mais de 18 anos, renda familiar acima de R$ 5.000,00 e não tiver restrições no CPF.
-- Em um processo de compras, o fornecedor só pode ser contratado se tiver nota fiscal, certificado de qualidade e preço abaixo de R$ 10,00 por unidade.
-- Em um processo de logística, o pedido só pode ser enviado se o cliente tiver mais de 18 anos, endereço de entrega no mesmo estado e não tiver restrições no CPF.
+RF02: Aplicar descontos automaticamente, solicitando aprovação do gerente se >10%.
 
-**4.5 Como escrever regras de negócio?**
+RF03: Emitir recibos com detalhes da compra (produtos, valores, data/hora).
 
-- Número identificador.
-- Nome da regra.
-- Data de criação e data da última alteração para comparações e
-controle.
-- Nome dos Autores das versões.
-- Número da versão (1, 2 etc).
-- Dependências: insira o identificador das regras atreladas, às quais a regra em questão depende.
-- Uma descrição detalhada para compreensão da regra.
+RF04: Bloquear vendas para clientes inadimplentes (pendências >30 dias).
 
-**4.6 Exemplos de regras de negócio com formatação**
+Módulo de Estoque
+RF05: Atualizar estoque em tempo real após cada venda.
 
-- **RN01 – Criação Comanda:** Para iniciar um atendimento no balcão, é necessário primeiro abrir uma nova comanda.
-- **RN02 – Inserir Produtos Comanda:** Para inserir um produto na comanda, é necessário que o produto esteja cadastrado no sistema e que a quantia comprada seja acima de zero.
-- **RN03 – Cadastro de Leitores:** Os leitores precisam fazer o cadastro para realizar o empréstimo.
-- **RN04 – Realizar Empréstimo:** Para realizar o empréstimo, apenas leitores com cadastro e nenhuma multa em aberto.
-- **RN05 – Registro de Empréstimo:** O gerente deve possuir acesso aos registros de empréstimos.
-- **RN06 – Pagamento de Multa:** O leitor que passar de 15 dias com o livro deverá pagar a multa de um real por dia de atraso.
-- **RN07 – Impressão de Orçamento:** Com as informações do
-orçamento registradas, a atendente deve imprimir o orçamento e
-repassar ao cliente para aprovação, e caso o cliente aprovar, a atendente deve solicitar a sua assinatura para aprovar a execução do serviço.
-- **RN08 – Abertura de OS:** Com o atendimento aprovado pelo cliente, a atendente deverá inserir os dados do cliente e do orçamento em um novo documento, para registros internos, realizando a abertura da OS.
-- **RN09 – Relatório de Fluxo de Caixa:** O relatório de fluxo de caixa será permitido somente para o administrador.
+RF06: Alertar sobre produtos abaixo do nível mínimo ou próximos ao vencimento (7 dias de antecedência).
+
+RF07: Cadastrar novos produtos com campos obrigatórios (nome, código de barras, preço, validade).
+
+Módulo de Relatórios
+RF08: Gerar relatórios de vendas (produtos mais vendidos, horários de pico, lucro diário/semanal/mensal).
+
+RF09: Exportar relatórios em PDF e Excel.
+
+Módulo de Usuários
+RF10: Controlar acesso por perfil (caixa, gerente, administrador).
+
+🛠️ Requisitos Não Funcionais (RNF)
+RNF01 – Desempenho
+RNF01.01: Suportar até 5 usuários simultâneos sem lentidão.
+
+RNF01.02: Tempo de resposta máximo de 2 segundos para operações críticas (ex: registro de vendas).
+
+RNF02 – Segurança
+RNF02.01: Criptografar dados sensíveis (histórico de vendas, informações de clientes).
+
+RNF02.02: Realizar backup automático diário em nuvem ou servidor local.
+
+RNF03 – Usabilidade
+RNF03.01: Interface intuitiva em português, com ícones de fácil compreensão.
+
+RNF03.02: Treinamento inicial de 2 horas para novos usuários.
+
+RNF04 – Disponibilidade
+RNF04.01: Sistema disponível 24/7, com tolerância a até 1 hora de indisponibilidade mensal.
+
+RNF05 – Integração
+RNF05.01: Compatibilidade com impressoras térmicas para recibos.
+
+RNF05.02: Funcionar offline temporariamente, sincronizando dados ao restabelecer conexão.
+
+RNF06 – Escalabilidade
+RNF06.01: Permitir adição de novos módulos sem impactar o desempenho atual.
+
 
 # 5. Requisitos funcionais
 (*Nessa parte a equipe deve descrever os requisitos funcionais que serão implementados no sistema. O texto abaixo descreve o que essa etapa deve conter e pode ser apagado depois.*)
