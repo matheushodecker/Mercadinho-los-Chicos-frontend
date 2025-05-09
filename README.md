@@ -11,7 +11,7 @@ relatórios, como por exemplo, de vendas..)*
 Professor: [Marco André Mendes](github.com/marcoandre)
 
 Equipe:
-- [Matheus Hodecker](github.com/matheushodecker)
+- [Matheus Hodecker](https//:github.com/matheushodecker)
 - [João Vitor Graciano](github.com/joaocostagraciano)
 - [Lucas Antonio Brandao](github.com/ABLukinhas)
 - [Ebraim Herrera](github.com/Ebraim30)
