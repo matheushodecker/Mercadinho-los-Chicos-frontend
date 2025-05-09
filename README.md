@@ -14,7 +14,7 @@ Equipe:
 - [Matheus Hodecker](github.com/matheushodecker)
 - [João Vitor Graciano](github.com/joaocostagraciano)
 - [Lucas Antonio Brandao](github.com/ABLukinhas)
-- [Ebraim Herrera] (github.com/Ebraim30)
+- [Ebraim Herrera](github.com/Ebraim30)
 
 
 Links do projeto:
