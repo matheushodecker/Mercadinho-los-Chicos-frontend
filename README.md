@@ -20,8 +20,8 @@ Equipe:
 Links do projeto:
 (*Coloque aqui os links para a documentação do projeto e os repositórios e plubicação do backend e frontend.*)
 -   [Documentação (esse documento)](github.com/marcoandre/pi-modelo)
--   Backend: [Repositório](github.com/marcoandre/pi-backend) e [Publicação](https://pi-backend.herokuapp.com/)
--   Frontend: [Repositório](github.com/marcoandre/pi-frontend) e [Publicação](https://pi-frontend.herokuapp.com/)
+-   Backend: [Repositório]([github.com/marcoandre/pi-backend](https://github.com/matheushodecker/Mercadinho-los-Chicos-backend)) e [Publicação]([https://pi-backend.herokuapp.com/](https://mercadinho-los-chicos-backend.onrender.com))
+-   Frontend: [Repositório]() e [Publicação]()
 
 
 
